@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+.container-center{
+    @apply flex  w-full  flex-col   h-full;
+   
+
+}
+.left-section{
+    @apply flex bg-blue-700 flex-col justify-center text-white text-center
+    p-5
+}
+.title{
+    @apply text-3xl text-white mb-6 font-bold
+}
+.left-section p{
+    @apply text-[18px] mb-6
+}
+.roles{
+    @apply flex gap-3 justify-center
+}
+.roles .role-btn{
+    @apply bg-white/20 px-6 py-3 rounded-lg text-[15px]
+}
+.role-btn span{
+    @apply flex items-center justify-center text-[18px]
+}
+.right-section{
+    @apply  flex items-center justify-center  p-4 
+}
+.card{
+    @apply bg-white p-8 rounded-2xl shadow-2xl 
+}
+.main-title{
+    @apply text-2xl font-bold text-center mb-3
+}
+.sub-title{
+    @apply text-center text-gray-500 mb-6
+}
+.card .data{
+    @apply flex  flex-col items-center gap-x-5 mt-3
+  
+}
+.tabs{
+    @apply flex bg-gray-200 mb-4 p-1 rounded-lg;
+}
+.tab{
+    @apply flex-1 text-center py-2 rounded-lg text-[15px] cursor-pointer
+}
+.tab.active {
+    @apply bg-blue-700 text-white transition
+}
+.tab span{
+    @apply flex items-center justify-center text-[18px]
+}
+.input-label{
+    @apply  block mb-1 text-left 
+}
+.input{
+    @apply w-full py-2 px-4 border rounded-lg mb-3 focus:border-blue-700 outline-none
+border-gray-300
+}
+.btn-primar{
+    @apply w-full py-3 rounded-lg bg-blue-700 text-white cursor-pointer mt-4;
+}
