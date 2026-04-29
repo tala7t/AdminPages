@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 header{
-    @apply flex justify-between items-center shadow-md p-4
+    @apply flex justify-between items-center shadow-md p-4  
 }
 .information{
     @apply flex justify-center items-center  gap-5 

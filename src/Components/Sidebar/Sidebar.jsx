@@ -1,4 +1,6 @@
 import { useState } from "react";
+import {useNavigate} from "react-router-dom";
+
 import { RxCaretRight } from "react-icons/rx";
 import { FaRegCircle } from "react-icons/fa6";
 import { HiMenu } from "react-icons/hi";
@@ -9,6 +11,8 @@ import Menu from "./Menu";
 
 import './Sidebar.css';
 function Sidebar(){
+    const navigate = useNavigate();
+
     const [openIndex, setOpenIndex] = useState(null);
     const [isOpen, setIsOpen] = useState(false);
     return(
@@ -41,9 +45,9 @@ function Sidebar(){
                                 <div className="data">
                                     <ul>
                                         {section.items.map((item, i) =>(
-                                            <li key={i}>
+                                            <li key={i} onClick={() => navigate(item.path)}>
                                                 <FaRegCircle className="icons"/>
-                                                <h4> {item}</h4>
+                                                <h4>{item.name}</h4>
                                                 <div></div>
                                             </li>
                                         ))}

@@ -15,7 +15,9 @@ import { GrDocumentSound } from "react-icons/gr";
 const Menu = [
     {
         title:"My Files",
-        items: ["Personal", "Academic", "Financial", "Alarms"],
+        items: [
+            {name:"Personal", path:"/personal"}
+            , "Academic", "Financial", "Alarms"],
         icon: GrUserManager
     },
     {
