@@ -8,19 +8,19 @@
 }
 
 .personal-card h2{
-    @apply text-2xl  font-bold mb-6
+    @apply text-2xl  font-bold mb-6 
 }
 .info-list {
-  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+  @apply  grid min-lg:grid-cols-2 gap-4  grid-cols-1
 }
 .personal-card .info-box{
-    @apply flex items-center gap-4 p-4  bg-[#e2e8f0] rounded-lg
+    @apply flex  max-md:flex-col  items-center gap-4 p-4  bg-[#e2e8f0] rounded-lg
 }
 .info-box .icon{
     @apply text-3xl text-blue-700 
 }
 .data{
-    @apply  gap-2
+    @apply flex max-sm:flex-col  gap-2
 }
 .data p{
     @apply font-bold text-xl

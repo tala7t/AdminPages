@@ -16,8 +16,11 @@ const Menu = [
     {
         title:"My Files",
         items: [
-            {name:"Personal", path:"/personal"}
-            , "Academic", "Financial", "Alarms"],
+            {name:"Personal", path:"/personal"},
+            {name:"Academic", path:"/academic"},
+            {name: "Financial", path:"/financial"},
+            {name:"Alarms", path:"/alarms"}
+            ],
         icon: GrUserManager
     },
     {
