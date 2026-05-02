@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.academic{
+    @apply flex flex-col items-center gap-6 p-6 bg-gray-100 min-h-full;
+}
+.academic-card{
+    @apply w-[80%] bg-white shadow-lg rounded-xl p-6;
+}
+.academic-card h2{
+    @apply text-2xl font-bold mb-6;
+}
+.academic-list{
+    @apply  grid min-lg:grid-cols-2 gap-4  grid-cols-1
+}
+.academic-list .academic-box{
+    @apply flex  max-md:flex-col  items-center gap-4 p-4  bg-[#e2e8f0] rounded-lg
+}
+.academic-box .icon{
+        @apply text-3xl text-blue-700 
+}
+.data{
+    @apply flex max-sm:flex-col  gap-2
+}
+.data p{
+    @apply font-bold text-xl
+}
+.data h4{
+    @apply text-xl text-[#666] 
+}
