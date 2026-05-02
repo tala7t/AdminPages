@@ -7,9 +7,6 @@ function MainLayout({children}){
     return(
         <>
             <div className="flex h-screen">
-                <button className="menu-btn" onClick={() => setIsOpen(true)}>
-                    <HiMenu/>
-                </button>
                     {isOpen && (
                         <div className="overlay" onClick={() => setIsOpen(false)}></div>
                     )}
